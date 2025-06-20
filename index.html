@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <form id="loginForm" onsubmit="return validateForm()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" class="input-field" placeholder="Enter username" />
+      <div id="usernameError" class="error"></div>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" class="input-field" placeholder="Enter password" />
+      <div id="passwordError" class="error"></div>
+
+      <div class="remember-me">
+        <input type="checkbox" id="rememberMe" name="rememberMe">
+        <label for="rememberMe">Remember me</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+    </form>
+
+    <!-- Checkbox to show after validation -->
+    <div id="extraCheckbox" class="extra-checkbox">
+      <label for="extraOption">
+        <input type="checkbox" id="extraOption" name="extraOption">
+        I agree to the terms and conditions
+      </label>
+    </div>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
+
